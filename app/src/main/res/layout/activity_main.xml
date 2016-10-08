@@ -18,120 +18,121 @@
         <EditText
             android:id="@+id/num_1_field"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:hint="@string/num_1"
             android:inputType="number"
-            android:text="0" />
+            android:text="0"
+            android:textAlignment="center" />
 
         <EditText
             android:id="@+id/num_2_field"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:hint="@string/num_2"
             android:inputType="number"
-            android:text="0" />
+            android:text="0"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/ans_field"
             android:layout_height="wrap_content"
             android:layout_span="2"
-            android:textAlignment="center"
             android:hint="@string/ans"
-            android:text="0" />
+            android:text="0"
+            android:textAlignment="center" />
     </TableRow>
 
     <TableRow>
 
         <Button
             android:id="@+id/one_button"
-            android:text="@string/_1"
-            android:onClick="onNumberButtonClick"/>
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_1" />
 
         <Button
             android:id="@+id/two_button"
-            android:text="@string/_2"
             android:onClick="onNumberButtonClick"
-            />
+            android:text="@string/_2" />
 
 
         <Button
             android:id="@+id/three_button"
-            android:text="@string/_3"
-            android:onClick="onNumberButtonClick"/>
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_3" />
 
         <Button
             android:id="@+id/add_button"
-            android:text="@string/add_button_text"
-            android:onClick="onOperatorButtonClick"/>
+            android:onClick="onOperatorButtonClick"
+            android:text="@string/add_button_text" />
     </TableRow>
 
     <TableRow>
+
         <Button
             android:id="@+id/four_button"
-            android:text="@string/_4"
             android:onClick="onNumberButtonClick"
-            />
+            android:text="@string/_4" />
 
         <Button
             android:id="@+id/five_button"
-            android:text="@string/_5"
-            android:onClick="onNumberButtonClick" />
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_5" />
 
 
         <Button
             android:id="@+id/six_button"
-            android:text="@string/_6"
-            android:onClick="onNumberButtonClick" />
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_6" />
 
         <Button
             android:id="@+id/minus_button"
-            android:text="@string/minus_button_text"
-            android:onClick="onOperatorButtonClick"/>
+            android:onClick="onOperatorButtonClick"
+            android:text="@string/minus_button_text" />
     </TableRow>
 
     <TableRow>
+
         <Button
             android:id="@+id/seven_button"
-            android:text="@string/_7"
-            android:onClick="onNumberButtonClick"/>
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_7" />
 
         <Button
             android:id="@+id/eight_button"
-            android:text="@string/_8"
-            android:onClick="onNumberButtonClick" />
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_8" />
 
 
         <Button
             android:id="@+id/nine_button"
-            android:text="@string/_9"
-            android:onClick="onNumberButtonClick"/>
+            android:onClick="onNumberButtonClick"
+            android:text="@string/_9" />
 
         <Button
             android:id="@+id/divide_button"
-            android:text="@string/divide_button_text"
-            android:onClick="onOperatorButtonClick"/>
+            android:onClick="onOperatorButtonClick"
+            android:text="@string/divide_button_text" />
     </TableRow>
 
     <TableRow>
+
         <Button
             android:id="@+id/clear_button"
-            android:text="@string/clear_button_text"
-            android:onClick="onOperatorButtonClick"/>
+            android:onClick="onOperatorButtonClick"
+            android:text="@string/clear_button_text" />
 
         <Button
             android:id="@+id/zero_button"
-            android:text="@string/zero_button_text"
-            android:onClick="onNumberButtonClick"/>
+            android:onClick="onNumberButtonClick"
+            android:text="@string/zero_button_text" />
 
 
         <Button
             android:id="@+id/equalTo_button"
-            android:text="@string/equal_button_text"
-            android:onClick="onOperatorButtonClick"/>
+            android:onClick="onOperatorButtonClick"
+            android:text="@string/equal_button_text" />
 
         <Button
             android:id="@+id/multiply_button"
-            android:text="@string/multi_button_text"
-            android:onClick="onOperatorButtonClick"/>
+            android:onClick="onOperatorButtonClick"
+            android:text="@string/multi_button_text" />
     </TableRow>
 </TableLayout>
