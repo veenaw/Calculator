@@ -9,26 +9,29 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:textAlignment="center"
+    android:stretchColumns="*"
     tools:context="com.example.android.calculator.MainActivity">
 
     <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_width="match_parent">
 
         <EditText
             android:id="@+id/num_1_field"
             android:layout_height="wrap_content"
             android:hint="@string/num_1"
-            android:inputType="number"
-            android:text="0"
-            android:textAlignment="center" />
+            android:text="@string/num1"
+            android:textAlignment="center"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            />
 
         <EditText
             android:id="@+id/num_2_field"
             android:layout_height="wrap_content"
             android:hint="@string/num_2"
-            android:inputType="number"
-            android:text="0"
+            android:inputType="none"
+            android:textIsSelectable="true"
+            android:text="@string/num2"
             android:textAlignment="center" />
 
         <TextView
@@ -36,103 +39,121 @@
             android:layout_height="wrap_content"
             android:layout_span="2"
             android:hint="@string/ans"
-            android:text="0"
+            android:text="@string/ans"
             android:textAlignment="center" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent">
 
         <Button
             android:id="@+id/one_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_1" />
+            android:text="@string/_1"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/two_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_2" />
+            android:text="@string/_2"
+            tools:ignore="ButtonStyle" />
 
 
         <Button
             android:id="@+id/three_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_3" />
+            android:text="@string/_3"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/add_button"
             android:onClick="onOperatorButtonClick"
-            android:text="@string/add_button_text" />
+            android:text="@string/add_button_text"
+            tools:ignore="ButtonStyle" />
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent">
 
         <Button
             android:id="@+id/four_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_4" />
+            android:text="@string/_4"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/five_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_5" />
+            android:text="@string/_5"
+            tools:ignore="ButtonStyle" />
 
 
         <Button
             android:id="@+id/six_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_6" />
+            android:text="@string/_6"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/minus_button"
             android:onClick="onOperatorButtonClick"
-            android:text="@string/minus_button_text" />
+            android:text="@string/minus_button_text"
+            tools:ignore="ButtonStyle" />
     </TableRow>
 
-    <TableRow>
+    <TableRow android:layout_width="match_parent">
 
         <Button
             android:id="@+id/seven_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_7" />
+            android:text="@string/_7"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/eight_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_8" />
+            android:text="@string/_8"
+            tools:ignore="ButtonStyle" />
 
 
         <Button
             android:id="@+id/nine_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/_9" />
+            android:text="@string/_9"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/divide_button"
             android:onClick="onOperatorButtonClick"
-            android:text="@string/divide_button_text" />
+            android:text="@string/divide_button_text"
+            tools:ignore="ButtonStyle" />
     </TableRow>
 
-    <TableRow>
+    <TableRow  android:layout_width="match_parent">
 
         <Button
             android:id="@+id/clear_button"
             android:onClick="onOperatorButtonClick"
-            android:text="@string/clear_button_text" />
+            android:text="@string/clear_button_text"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/zero_button"
             android:onClick="onNumberButtonClick"
-            android:text="@string/zero_button_text" />
+            android:text="@string/zero_button_text"
+            tools:ignore="ButtonStyle" />
 
 
         <Button
             android:id="@+id/equalTo_button"
             android:onClick="onOperatorButtonClick"
-            android:text="@string/equal_button_text" />
+            android:text="@string/equal_button_text"
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/multiply_button"
             android:onClick="onOperatorButtonClick"
-            android:text="@string/multi_button_text" />
+            android:text="@string/multi_button_text"
+            tools:ignore="ButtonStyle" />
     </TableRow>
 </TableLayout>

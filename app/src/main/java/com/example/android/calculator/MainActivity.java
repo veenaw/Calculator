@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MyActivity";
-    private static int ans = 0;
+    private static float ans = 0;
     private static int operator=0;
 
 
@@ -19,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        this.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
     }
 
-    protected void onNumberButtonClick(View v) {
+    public void onNumberButtonClick(View v) {
         final Button b = (Button) v;
         if (b == null) {
 
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    protected void onOperatorButtonClick(View v) {
+    public void onOperatorButtonClick(View v) {
 
         final EditText number1 = (EditText) findViewById(R.id.num_1_field);
         final EditText number2 = (EditText) findViewById(R.id.num_2_field);
@@ -88,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 if (num2 == 0) {
                     Toast.makeText(this, " Divide by 0, Num2 cannot be 0 !!!", Toast.LENGTH_LONG).show();
                 } else {
-                    ans = num1 / num2;
+                    ans = (float) num1 / (float) num2;
                 }
                 break;
             }

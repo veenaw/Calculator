@@ -19,4 +19,6 @@
     <string name="num_1">Num 1</string>
     <string name="num_2">Num 2</string>
     <string name="ans">Ans</string>
+    <string name="num2">0</string>
+    <string name="num1">0</string>
 </resources>
